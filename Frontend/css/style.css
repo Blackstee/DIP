@@ -358,11 +358,34 @@ polygon {
 	position:absolute;
 	top:0;
 	padding:6px 10px 7px 10px;
-	font-size:2.3em;
+	font-size:2.1em;
 	color:#FFCC33;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 
+
 #container{padding: 50px;}
+
+
+
+
+.preview
+{
+
+    margin-left: 105%;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: 1s;
+    position : absolute; 
+    top: 13%;
+    
+        
+
+}
+a.openpreview:hover+div
+{
+ opacity: 1;
+}

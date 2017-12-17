@@ -36,7 +36,7 @@
               </a>
             </li>  
               <a class="nav-link" data-target="#authorise" data-toggle="modal" class="material-icons button add center-block" href="#">Выйти</a>
-            <a class="nav-link" href="triangle.html">BACK </a>
+        
           </ul>
         </div>
       </div>
@@ -49,17 +49,32 @@
     <li>
       <a href="#"><i class="fa fa-table"></i> Спецификации<i class="fa fa-caret-down"></i></a>
       <ul>
-        <li><a href="#">Спецификация 1</a></li>
-        <li><a href="#">Спецификация 2</a></li>
-        <li><a href="#">Спецификация 3</a></li>
+        <li><a href="#" class="openpreview" >Спецификация 1</a>
+        <div class="preview"><img src="images/specifications/1.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" >Спецификация 2</a>
+        <div class="preview"><img src="images/specifications/2.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" >Спецификация 3</a>
+        <div class="preview"><img src="images/specifications/3.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" >Спецификация 4</a>
+        <div class="preview"><img src="images/specifications/4.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" >Спецификация 5</a>
+        <div class="preview"><img src="images/specifications/5.JPG" width = "145%" height="auto"></div>
+        </li>  
       </ul>
     </li>
     <li>
-      <a href="#"><i class="fa fa-pencil"></i> План здания<i class="fa fa-caret-down"></i></a>
+      <a href="#"><i class="fa fa-pencil"></i> Система отопления<i class="fa fa-caret-down"></i></a>
       <ul>
-        <li><a href="#">  Цокольный этаж</a></li>
-        <li><a href="#"> Первый этаж</a></li>
-        <li><a href="#"> Второй этаж</a></li>
+        <li><a href="#" class="openpreview" >Первый этаж</a>
+        <div class="preview"><img src="images/sys_otop/5.1.JPG" width = "145%" height="auto"></div>
+        </li>
+        <li><a href="#" class="openpreview" >Второй этаж</a>
+        <div class="preview"><img src="images/sys_otop/5.2.JPG" width = "145%" height="auto"></div>
+        </li>
       </ul>
     </li>
     <li><a href="#"><i class="fa fa-dollar"></i> Смета<i class="fa fa-caret-down"></i></a>
@@ -67,6 +82,8 @@
         <li><a href="#"> Смета 1</a></li>
         <li><a href="#"> Смета 2</a></li>
         <li><a href="#"> Смета 3</a></li>
+          
+
       </ul>
     </li>
   </ul>
@@ -102,6 +119,7 @@ $("#showstructure").click(function(e){
 				$(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
 			}
 		});
+
         
 </script>
 
