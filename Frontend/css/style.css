@@ -366,6 +366,80 @@ polygon {
 }
 
 
+#menupro{
+	position:fixed;
+	background-color:#222;
+	height:100%;
+	z-index:10;
+	width:280px;
+	color:#bbb;
+	top:0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity:1;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#menupro ul{
+	list-style:none;
+	margin-top:0;
+	padding:0
+}
+#menupro ul li{border-bottom: 1px solid #2a2a2a;}
+#menupro>ul>li>a{border-right:4px solid #222;}
+#menupro ul li a{
+	color:inherit;
+	font-size:16px;
+	display:block;
+	padding:8px 0 8px 7px;
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-weight: 600;
+}
+#menupro ul a i{
+	margin-left:10px;
+	font-size: 18px;
+	margin-top: 3px;
+	width: 20px;
+}
+#menupro ul a i[class*='fa-caret']{float: left;}
+#menupro ul a:hover,#menupro ul a.active{
+	background-color:#111;
+	border-right-color: #FFCC33;
+	color:#FFCC33;
+}
+#menupro ul a:hover i:first-child{color:#FFCC33;}
+
+	/* Submenu */
+	#menupro ul li a.active+ul{display:block}
+	#menupro ul li ul{margin-top: 0;display: none;}
+	#menupro ul li ul li{border-bottom: none;}
+	#menupro ul li ul li a{padding-right: 30px;}
+	#menupro ul li ul li a:hover{
+		background-color:#1A1A1A;
+	}
+	/* /Submenu */
+
+
+/* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+.right{right:-280px;}
+.show{right:0;}
+
+#showmenupro{
+	margin-left:100%;
+	position:absolute;
+	top:0;
+	padding:6px 10px 7px 10px;
+	font-size:1.3em;
+	color:#FFCC33;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
 #container{padding: 50px;}
 
 
@@ -391,17 +465,28 @@ a.openpreview:hover+div
 }
 
 
-#content {
+#contentsearch {
   position: absolute;
-  height: 50px;
-  width: 300px;
+  height: 0px;
+  width: 0px;
   margin-right: 20%;
-  top: 15%;
-  left: 110%;
+  top: 11%;
+  left: 97%;
   transform: translate(-50%, -50%);
 }
 
-#content.on {
+#contentdraw {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin-right: 20%;
+  top: 7%;
+  left: 95%;
+  font-size:2.6em;
+	color:#FFCC33;
+}
+
+#contentsearch.on {
   -webkit-animation-name: in-out;
   animation-name: in-out;
   -webkit-animation-duration: 0.7s;
@@ -525,3 +610,6 @@ input {
   -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
+
+
+
