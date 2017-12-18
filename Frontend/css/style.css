@@ -611,5 +611,22 @@ input {
   transform: translate(-100%, -50%);
 }
 
+.document
+{
+    overflow: auto;
+    text-align: justify;
+    margin-left: 110%;
+    width: 230%;
+    height: auto;
+    opacity: 0;
+    transition: 1s;
+    position : absolute; 
+    top: 13%;
+    padding-right: 5%;
+    bottom: 20%;
+        
+
+}
+
 
 

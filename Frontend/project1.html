@@ -79,9 +79,18 @@
     </li>
     <li><a href="#"><i class="fa fa-dollar"></i> Смета<i class="fa fa-caret-down"></i></a>
       <ul>
-        <li><a href="#"> Смета 1</a></li>
-        <li><a href="#"> Смета 2</a></li>
-        <li><a href="#"> Смета 3</a></li>
+        <li><a onclick="open_document(1)"> Смета 1</a>
+          <div class="document" id = "doc_1">
+              <h1> DOCUMENT:</h1><br>
+              <h2>Date: </h2>
+              <h2>Author:</h2><br><br>
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis justo ac est tincidunt sagittis. Donec viverra ut elit eget pharetra. Pellentesque dui magna, congue a tellus a, faucibus porta felis. Suspendisse vitae ullamcorper ante, gravida consectetur metus. Nam eu laoreet massa. Donec egestas tellus eu est viverra interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse in leo egestas, ullamcorper neque vitae, scelerisque sapien. In at venenatis elit, et venenatis ex. Aenean imperdiet varius nisi, at efficitur nunc finibus sed. Donec libero tortor, viverra ac turpis at, euismod interdum nisi. Quisque facilisis erat laoreet, finibus nisl in, ultricies magna.</h2>
+              
+          </div>
+          </li>
+        <li><a onclick="open_document(2)"> Смета 2</a>
+          </li>
+        <li><a onclick="open_document(3)"> Смета 3</a></li>
           
 
       </ul>
@@ -173,6 +182,14 @@ document.getElementById('img_'+num).style.top= '5%';
 document.getElementById('img_'+num).style.opacity= '1'; 
 $("#structure").toggleClass("show");    
 }
+        
+        
+function open_document(num) { 
+var num;
+$(".preview").css ("opacity",'0');    
+document.getElementById('doc_'+num).style.opacity= '1'; 
+$("#structure").toggleClass("show");    
+}        
         
 </script>
 
