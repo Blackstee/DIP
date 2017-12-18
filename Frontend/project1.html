@@ -186,7 +186,8 @@ $("#structure").toggleClass("show");
         
 function open_document(num) { 
 var num;
-$(".preview").css ("opacity",'0');    
+$(".preview").css ("opacity",'0');  
+$(".document").css ("opacity",'0');      
 document.getElementById('doc_'+num).style.opacity= '1'; 
 $("#structure").toggleClass("show");    
 }        
